@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <!-- MENU ENCABEZADO -->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">Mi Portafolio</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">HABILIDADES</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
+                    <li><a href="#portfolio" onclick="seleccionar()">PORTAFOLIO</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+    <!-- SECCION INICIO -->
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img src="img/foto perfil.PNG" alt="">
+            </div>
+            <h1>Alonso Ruiz</h1>
+            <h2>Ing. De Software - Desarrollador Web</h2>
+            <div class="redes">
+                <a href="https://www.facebook.com/alonso.ruiz.3910?locale=es_LA"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/smith.rc03/"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/alonso-ruiz-cardenas-23764a2b5/"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://wa.me/907750528?text=Hola,%20quiero%20más%20información."><i class="fa-brands fa-whatsapp"></i></a>
+            </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION SOBRE MI -->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>Sobre Mí</h2>
+            <p><span>Hola, soy Alonso Ruiz.</span> Profesional proactivo y organizado, destacado en trabajo en equipo, toma de decisiones y solución rápida de problemas. En busca de desafíos que me permitan aplicar  todos mis conocimientos y creatividad.</p>
+
+            <div class="fila">
+                <!-- datos personales -->
+                <div class="col">
+                    <h3>Datos Personales</h3>
+                    <ul>
+                        <li>
+                            <strong>Teléfono</strong>
+                            907-750-528
+                        </li>
+                        <li>
+                            <strong>Email</strong>
+                            ruizcardenas03@gmail.com
+                        </li>
+                        <li>
+                            <strong>Dirección</strong>
+                            Lima, Comas
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- intereses -->
+                <div class="col">
+                    <h3>Intereses</h3>
+                    <div class="contenedor-intereses">
+                        <div class="interes">
+                            <i class="fa-solid fa-headphones"></i>
+                            <span>MUSICA</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-person-hiking"></i>
+                            <span>DEPORTE</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-book"></i>
+                            <span>LIBROS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-car"></i>
+                            <span>AUTOS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-camera"></i>
+                            <span>FOTOS</span>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <a href="CV - Ruiz Cardenas Alonso.pdf" download>
+            <button>
+                Descargar CV <i class="fa-solid fa-download"></i>
+                <span class="overlay"></span>
+            </button>
+            </a>
+        </div>
+    </section>
+
+    <!-- SECCION SKILLS -->
+    <section class="skills" id="skills">
+        <div class="contenido-seccion">
+            <h2>Habilidades</h2>
+            <div class="fila">
+                <!-- Technical Skill -->
+                <div class="col">
+                    <h3>Habilidades Tecnologicas</h3>
+                    <div class="skill">
+                        <span>Javascript</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>75%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>HTML & CSS</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>89%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>MySql</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>95%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Wordpress</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>81%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>PHP - LARAVEL</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>55%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Professional Skills -->
+                <div class="col">
+                    <h3>Habilidades Profesionales</h3>
+                    <div class="skill">
+                        <span>Comunicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Trabajo en Equipo</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>70%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Creatividad</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>99%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Dedicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>65%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Organizado</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>94%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION CURRICULUM -->
+    <section id="curriculum" class="curriculum">
+        <div class="contenido-seccion">
+            <h2>Curriculum</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    <h3>Educación</h3>
+                    <div class="item izq">
+                        <h4>Secundaria Completa</h4>
+                        <span class="casa">Fe y Alegria 10</span>
+                        <span class="fecha">2015 - 2020</span>
+                        <p>Secundaria completa, con buenas notas y culminadas satisfactoriamente.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Cursos de Corel draw, Phothoshop</h4>
+                        <span class="casa">PROMAE</span>
+                        <span class="fecha">2017 - 2018</span>
+                        <p>Cursos intermedio de diseño con las herramientas de Corel Draw, Photoshop.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Ing. De Software con IA</h4>
+                        <span class="casa">SENATI</span>
+                        <span class="fecha">2021 - 2024</span>
+                        <p>Carrera apunto de culminar con muchos conocimientos en leguajes de programacion como PHP, C#, Python, JavaScrip, etc y programas externos y base de datos como Mysql, SQL, etc preparado para cualquier desafio o proyecto</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col derecha">
+                    <h3>Experiencia de trabajo</h3>
+                    <div class="item der">
+                        <h4>Front - Back Developer</h4>
+                        <span class="casa">N.H.L</span>
+                        <span class="fecha">Diciembre 2022 - Junio 2023</span>
+                        <p>Encargado de realizar paginas web a pedido de los clientes, trabajando en equipo para culminar cada proyecto usando HTML, CSS, Base de datos, Etc.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Desarrollador Web</h4>
+                        <span class="casa">Digital Buho</span>
+                        <span class="fecha">Julio 2023 - Enero 2024</span>
+                        <p>Encargado de dar mantenimiento a la pagina web principal y al sistema de facturacion de la empresa y dando ideas para la mejora del sistema e interfaz de los sistemas.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION PORTFOLIO -->
+    <section id="portfolio" class="portfolio">
+        <div class="contenido-seccion">
+            <h2>PORTFOLIO</h2>
+            <div class="galeria">
+                <div class="proyecto">
+                    <img src="img/vaping.png" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Paginas web</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/yuntas.png" alt="">
+                    <div class="overlay">
+                        <h3>Diseño de Ventas</h3>
+                        <p>Paginas Web</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/formularios.png" alt="">
+                    <div class="overlay">
+                        <h3>Diseño de Formularios</h3>
+                        <p>Organización en GitHub</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/Laravel.png" alt="">
+                    <div class="overlay">
+                        <h3>Proyecto en Laravel</h3>
+                        <p>Organización en GitHub</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/p5.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Adaptacion a cualquier dispositivo</h3>
+                        <p>Responsive</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/p6.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Fotografía</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+            <a href="https://www.facebook.com/alonso.ruiz.3910?locale=es_LA"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/smith.rc03/"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/alonso-ruiz-cardenas-23764a2b5/"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://wa.me/907750528?text=Hola,%20quiero%20más%20información."><i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
